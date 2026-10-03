@@ -1,0 +1,12 @@
+{
+  "state_dir": "./state",
+  "admin_token_file": "./secrets/admin-token",
+  "env_file": "./secrets/environment",
+  "host": "127.0.0.1",
+  "port": 9382,
+  "public_host": "facts.example.com",
+  "ragflow_url": "http://127.0.0.1:9380",
+  "ragflow_public_url": "https://rag.example.com",
+  "llm_url": "https://api.deepseek.com",
+  "llm_model": "YOUR_MODEL_ID"
+}

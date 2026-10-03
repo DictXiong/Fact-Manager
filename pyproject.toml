@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fact-manager"
+version = "0.3.1"
+description = "Evidence-backed fact libraries with human review and scoped MCP access"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["httpx", "mcp", "openpyxl", "pypdf", "python-multipart", "starlette", "uvicorn"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/DictXiong/Fact-Manager"
+Issues = "https://github.com/DictXiong/Fact-Manager/issues"
+
+[project.scripts]
+fact-manager = "fact_manager.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fact_manager*"]
+
+[tool.setuptools.package-data]
+fact_manager = ["static/*"]
